@@ -41,29 +41,33 @@ if test x"${have_pkg_config}" != x"no"; then
     AC_MSG_CHECKING([if pkg-config knows NLopt])
     if pkg-config --exists nlopt; then
         AC_MSG_RESULT([yes])
-        nlopt_include=$(pkg-config --cflags nlopt)
-        nlopt_libs=$(pkg-config --libs nlopt)
-        AC_SUBST([NLOPT_INCLUDE], "${nlopt_include}")
-        AC_SUBST([NLOPT_LIBS],    "${nlopt_libs}")
+        ## Since nlopt has been found, test for minimal version requirement
+        AC_MSG_CHECKING([for pkg-config checking NLopt version])
+        if pkg-config --atleast-version=2.7.0 nlopt; then
+            AC_MSG_RESULT([>= 2.7.0])
+            nlopt_include=$(pkg-config --cflags nlopt)
+            nlopt_libs=$(pkg-config --libs nlopt)
+            AC_SUBST([NLOPT_INCLUDE], "${nlopt_include}")
+            AC_SUBST([NLOPT_LIBS],    "${nlopt_libs}")
+            need_to_build="no"
+        else
+            AC_MSG_RESULT([insufficient: NLopt 2.7.0 or later is preferred.])
+        fi
     else
         AC_MSG_RESULT([no])
-        have_pkg_config="no"
-    fi
-fi
-
-## And if we have pkg-config, use it to test minimal version
-if test x"${have_pkg_config}" != x"no"; then
-    AC_MSG_CHECKING([for pkg-config checking NLopt version])
-    if pkg-config --atleast-version=2.7.0 nlopt; then
-        AC_MSG_RESULT([>= 2.7.0])
-        need_to_build="no"
-    else
-        AC_MSG_RESULT([insufficient: NLopt 2.7.0 or later is preferred.])
     fi
 fi
 
 ## So do we need to build
 if test x"${need_to_build}" != x"no"; then
+    AC_PATH_PROG(have_cmake, cmake, no)
+    if test x"${have_cmake}" == x"no"; then
+       . src/scripts/cmake_config.sh
+       if test -z "${CMAKE_BIN}"; then
+          ## also error to end configure here
+          AC_MSG_ERROR([Could not find 'cmake'.])
+       fi
+    fi
     ## 'uname -m' on M1 give x86_64 which is ... not helping
     machine=`"${R_HOME}/bin/Rscript" -e 'cat(Sys.info()[["machine"]])'`
     AC_MSG_RESULT([using NLopt via local cmake build on ${machine} ])

@@ -1,11 +1,24 @@
+# nloptr 2.0.1
+
+This is a release mainly for increasing direct compatibility with most user cases. In details, here is the list of changes that have been made:
+
+* Update `SystemRequirements` description to make it clearer which minimal versions of `cmake` (`>= 3.15.0`) and `nlopt` (`>= 2.7.0`) are required (#100, @HenrikBengtsson).
+* End configuration sooner and louder if `cmake` is missing when needed with clearer message (#103, @eddelbuettel).
+* Ensure system-wide installation of `cmake` in the list of suggestions to install it when missing.
+* Update GHA scripts to latest versions.
+* Configure git to always use LF line endings for configure.ac file.
+* Add CI for R-devel on Windows with Rtools42.
+* Fix for compatibility with versions of R anterior to `4.0` (#111).
+* Look for a `cmake3` binary in the current path before `cmake` for increasing compatibility with most RHEL/CentOS users (#104, @bhogan-mitre @HenrikBengtsson).
+
 # nloptr 2.0.0
 
 ## Major changes
 
 * Use [CMake](https://cmake.org) to build `nlopt` from included sources on macOS and on Linux if no system build of NLopt (>= 2.7.0) is found.
 * Update included sources of NLopt to latest version (2.7.1).
-* Put back the ability on Linux platforms to re-use an existing external build of NLopt instead of building from the included sources (contributed by Dirk Eddelbuettel, [#88]).
-* Now builds using NLopt from `rwinlib` on Windows current release (contributed by Jeroen Ooms, [#92]), or NLopt from `Rtools42` on Windows devel (contributed by Tomas Kalibera).
+* Put back the ability on Linux platforms to re-use an existing external build of NLopt instead of building from the included sources (contributed by Dirk Eddelbuettel, #88).
+* Now builds using NLopt from `rwinlib` on Windows current release (contributed by Jeroen Ooms, #92), or NLopt from `Rtools42` on Windows devel (contributed by Tomas Kalibera).
 
 ## Minor changes
 
@@ -18,7 +31,7 @@
 * Now tracking code coverage.
 * Update NLopt-related URLs following migration of [NLopt website](https://nlopt.readthedocs.io/en/latest/).
 * Fixed bug to avoid linking issues when using the C API via `#include <nloptrAPI.h>` in several source files.
-* Fix precision issue in test example `hs071` ([jyypma/nloptr#81], [@Tom-python0121]).
+* Fix precision issue in test example `hs071` (jyypma/nloptr#81, @Tom-python0121).
 * Made NLopt algorithm `NLOPT_GN_ESCH` available from R interface (contributed by Xiongtao Dai).
 
 # nloptr 1.2.2 (29 February 2020)
