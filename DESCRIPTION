@@ -1,7 +1,7 @@
 Package: nloptr
 Type: Package
 Title: R Interface to NLopt
-Version: 2.0.1
+Version: 2.0.2
 Authors@R: c(person("Jelmer", "Ypma", role = "aut",
                     email = "uctpjyy@ucl.ac.uk"),
              person(c("Steven", "G."), "Johnson", role = "aut",
@@ -43,7 +43,7 @@ SystemRequirements: cmake (>= 3.15.0) which is used only on Linux or
         found.
 Biarch: true
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 LinkingTo: testthat
 Suggests: knitr, rmarkdown, xml2, testthat (>= 3.0.0), covr
 VignetteBuilder: knitr
@@ -52,7 +52,7 @@ URL: https://astamm.github.io/nloptr/index.html,
         https://github.com/astamm/nloptr
 BugReports: https://github.com/astamm/nloptr/issues
 NeedsCompilation: yes
-Packaged: 2022-05-03 11:57:59 UTC; stamm-a
+Packaged: 2022-05-19 09:37:57 UTC; stamm-a
 Author: Jelmer Ypma [aut],
   Steven G. Johnson [aut] (author of the NLopt C library),
   Hans W. Borchers [ctb],
@@ -67,4 +67,4 @@ Author: Jelmer Ypma [aut],
   Jeroen Ooms [ctb]
 Maintainer: Aymeric Stamm <aymeric.stamm@math.cnrs.fr>
 Repository: CRAN
-Date/Publication: 2022-05-03 13:00:02 UTC
+Date/Publication: 2022-05-19 10:20:02 UTC

@@ -1,6 +1,6 @@
-3bfdd1414b485f7acf56d0697a44c4de *DESCRIPTION
+cb1e1733a2f2113fd5130f0623d2dfe3 *DESCRIPTION
 be48e9fa0b8b1abf0e1f056a6acc4897 *NAMESPACE
-81ed2222875dd65fb7e4ea81e6a4e427 *NEWS.md
+82276d163ec089382864cafb5fa01846 *NEWS.md
 9f9c64ce7426755648d13920c7be8016 *R/auglag.R
 5e3ed98c6d49e80090fbaa171f3d9519 *R/catch-routine-registration.R
 d4073e3a0a61fa6d19bb7730468fd1f9 *R/ccsaq.R
@@ -29,12 +29,12 @@ a29b8a04e5329071c08281d28256b313 *R/tnewton.R
 2d5b0d360169f1ac45ea48ed727ec100 *README.md
 bced8dc2bad53a53b1076973203c353d *build/vignette.rds
 41b24a7410fc707ea978acd5073dc371 *cleanup
-a4c5c84326d7650e7529744c406e4d83 *configure
-56a25c3098174235af448af18c5c814e *configure.ac
+88d2e07eb4d1d112ccac8a205e2dc9de *configure
+91b535fa365c497602f8923cbe338a62 *configure.ac
 1a58668226404dc404de4f2cad195c25 *inst/CITATION
 3eeb5d3f28654b357f487e3a08f495c4 *inst/doc/nloptr.R
 7ee5ccda2bac7b383362a446fdb010af *inst/doc/nloptr.Rmd
-e5c4a9c62a1473d516801afd11ca8ece *inst/doc/nloptr.html
+627e9d0dfefde3b99e1c717488e4c6e7 *inst/doc/nloptr.html
 43c93d3a0ca355cc16a0f64117216cba *inst/include/nlopt.f
 e3e3187995f39f8b9ef632a82a8013a9 *inst/include/nlopt.h
 b6613ad3b69f214e64cbdefb4d4c80ff *inst/include/nlopt.hpp

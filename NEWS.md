@@ -1,3 +1,16 @@
+# nloptr 2.0.2
+
+This is a patch version in which:
+
+* I link to the `nlopt` library via `nlopt/lib/libnlopt.a` instead of
+`-Lnlopt/lib -lnlopt` when building `nlopt` from included sources to avoid
+potential mess where `-lnlopt` could look for the `nlopt` library in other
+places and possibly link with an existing too old system build of `nlopt`.
+
+Additionally, we contacted Simon Urbanek for updating the `nlopt` recipe for
+macOS users so that it does now match the latest `v2.7.1`, which should avoid
+`nlopt` to be built on the fly on CRAN machines.
+
 # nloptr 2.0.1
 
 This is a release mainly for increasing direct compatibility with most user cases. In details, here is the list of changes that have been made:
