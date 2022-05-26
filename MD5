@@ -1,6 +1,6 @@
-cb1e1733a2f2113fd5130f0623d2dfe3 *DESCRIPTION
+ac6c9ebde8dc6f0e263ec5234357240e *DESCRIPTION
 be48e9fa0b8b1abf0e1f056a6acc4897 *NAMESPACE
-82276d163ec089382864cafb5fa01846 *NEWS.md
+e591593d8f3f923db806766f921d9ece *NEWS.md
 9f9c64ce7426755648d13920c7be8016 *R/auglag.R
 5e3ed98c6d49e80090fbaa171f3d9519 *R/catch-routine-registration.R
 d4073e3a0a61fa6d19bb7730468fd1f9 *R/ccsaq.R
@@ -26,15 +26,15 @@ c1dd5ff868df520f0e153a63a8b13c87 *R/slsqp.R
 a29b8a04e5329071c08281d28256b313 *R/tnewton.R
 96e6f0589e6b5cd1e690d26c530c49e6 *R/varmetric.R
 7393af449aca2479a40304ea72987eca *R/zzz.R
-2d5b0d360169f1ac45ea48ed727ec100 *README.md
-bced8dc2bad53a53b1076973203c353d *build/vignette.rds
+8feb599f31d8716e017658bcf8aa8662 *README.md
+f6485893f632cf986ed31e93bc14134e *build/vignette.rds
 41b24a7410fc707ea978acd5073dc371 *cleanup
 88d2e07eb4d1d112ccac8a205e2dc9de *configure
 91b535fa365c497602f8923cbe338a62 *configure.ac
 1a58668226404dc404de4f2cad195c25 *inst/CITATION
 3eeb5d3f28654b357f487e3a08f495c4 *inst/doc/nloptr.R
 7ee5ccda2bac7b383362a446fdb010af *inst/doc/nloptr.Rmd
-627e9d0dfefde3b99e1c717488e4c6e7 *inst/doc/nloptr.html
+02a9310044de75e00892f1521704f571 *inst/doc/nloptr.html
 43c93d3a0ca355cc16a0f64117216cba *inst/include/nlopt.f
 e3e3187995f39f8b9ef632a82a8013a9 *inst/include/nlopt.h
 b6613ad3b69f214e64cbdefb4d4c80ff *inst/include/nlopt.hpp
@@ -74,9 +74,8 @@ d89c8598683bdbc4184169d1432db9d7 *src/Makevars.win
 cad1acafb68d545432099791aa0b26f1 *src/nloptr.c
 867bc65d88b222ba5c42e0337359ff12 *src/nloptr.h
 a58996e86f011b1556327750466bcba1 *src/scripts/cmake_config.sh
-88efdb9d4bfed8950e83deae101c9106 *src/scripts/nlopt_cleanup.sh
+53ed6c22d808fde48f2eca0d83fc5a15 *src/scripts/nlopt_cleanup.sh
 9792b873cb51bce028346abb20bacf89 *src/scripts/nlopt_download.sh
-bd732e164846a8730e6e850d3d550b7d *src/scripts/nlopt_install.sh
 3fd0eb363669e71650dfe0834fb09258 *src/scripts/r_config.sh
 f0f7a417b7a0929cd63ebbbc07f9dacf *src/test-C-API.cpp
 47e11cfb6e87798c519cd2b22d77d038 *src/test-C-API.h
@@ -93,7 +92,7 @@ f4d2f853c33b7f53cc63e76f77c51471 *tests/testthat/test-hs023.R
 b53872ed46bc14794095ccd93a519ed5 *tests/testthat/test-parameters.R
 d0741adf6843a7b12f1fd87855808b5d *tests/testthat/test-simple.R
 64d6d932023594ae719aa2f05d93194a *tests/testthat/test-systemofeq.R
-b9b0a508079d1b275c101f529d160ad3 *tools/cmake_call.sh
+3d32f40277d6c3df719b54368ae08a61 *tools/cmake_call.sh
 0e377c2bef61f13be9df61bcfb9b9d8c *tools/winlibs.R
 7ee5ccda2bac7b383362a446fdb010af *vignettes/nloptr.Rmd
 5dd9d4e23df596afc489451e4453f6bc *vignettes/reflist.bib
