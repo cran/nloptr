@@ -67,7 +67,7 @@ getListElement (SEXP list, char *str)
     return elmt;
 }
 
-// convert string to nlopt_alogirthm
+// convert string to nlopt_algorithm
 nlopt_algorithm getAlgorithmCode( const char *algorithm_str ) {
 
     nlopt_algorithm algorithm;
@@ -238,11 +238,11 @@ double func_objective(unsigned n, const double *x, double *grad, void *data)
             Rprintf( "\tx = %f\n", x[ 0 ] );
         }
         else {
-            Rprintf( "\tx = ( %f", x[ 0 ] );
+            Rprintf( "\tx = (%f", x[ 0 ] );
             for (i=1;i<n;i++) {
                 Rprintf( ", %f", x[ i ] );
             }
-            Rprintf( " )\n" );
+            Rprintf( ")\n" );
         }
     }
 
@@ -372,11 +372,11 @@ void func_constraints_ineq(unsigned m, double* constraints, unsigned n, const do
             Rprintf( "\tg(x) = %f\n", constraints[ 0 ] );
         }
         else {
-            Rprintf( "\tg(x) = ( %f", constraints[ 0 ] );
+            Rprintf( "\tg(x) = (%f", constraints[ 0 ] );
             for (i=1;i<m;i++) {
                 Rprintf( ", %f", constraints[ i ] );
             }
-            Rprintf( " )\n" );
+            Rprintf( ")\n" );
         }
     }
 
@@ -483,11 +483,11 @@ void func_constraints_eq(unsigned m, double* constraints, unsigned n, const doub
             Rprintf( "\th(x) = %f\n", constraints[ 0 ] );
         }
         else {
-            Rprintf( "\th(x) = ( %f", constraints[ 0 ] );
+            Rprintf( "\th(x) = (%f", constraints[ 0 ] );
             for (i=1;i<m;i++) {
                 Rprintf( ", %f", constraints[ i ] );
             }
-            Rprintf( " )\n" );
+            Rprintf( ")\n" );
         }
     }
 
@@ -629,6 +629,15 @@ nlopt_opt getOptions( SEXP R_options, int num_controls, int *flag_encountered_er
         Rprintf("Error: nlopt_set_population returned NLOPT_INVALID_ARGS.\n");
     }
 
+    SEXP R_opts_vector_storage;
+    PROTECT( R_opts_vector_storage = AS_INTEGER( getListElement( R_options, "vector_storage" ) ) );
+    unsigned int vector_storage = INTEGER( R_opts_vector_storage )[0];
+    res = nlopt_set_vector_storage(opts, vector_storage);
+    if ( res == NLOPT_INVALID_ARGS ) {
+      *flag_encountered_error = 1;
+      Rprintf("Error: nlopt_set_vector_storage returned NLOPT_INVALID_ARGS.\n");
+    }
+
     SEXP R_opts_ranseed;
     PROTECT( R_opts_ranseed = AS_INTEGER( getListElement( R_options, "ranseed" ) ) );
     unsigned long ranseed = INTEGER( R_opts_ranseed )[0];
@@ -637,7 +646,8 @@ nlopt_opt getOptions( SEXP R_options, int num_controls, int *flag_encountered_er
     if ( ranseed > 0 ) {
         nlopt_srand(ranseed);
     }
-    UNPROTECT( 11 );
+
+    UNPROTECT( 12 );
 
     return opts;
 }
