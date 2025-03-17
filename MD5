@@ -1,6 +1,6 @@
-aa3d75cbd06d96e740d45f716ff3b185 *DESCRIPTION
+85976d834369c525c42c780437ce98f2 *DESCRIPTION
 be48e9fa0b8b1abf0e1f056a6acc4897 *NAMESPACE
-56fd8187d54a5fa71ebc8b6374796c8f *NEWS.md
+ae3a1a44253457a69513c1a78bf3ca8e *NEWS.md
 2c9eea2671549aed2473f5ecf26aef5b *R/auglag.R
 a4d741da1971102d9a2c8a95e718012c *R/ccsaq.R
 8706da0ffa93ea4cff2e8d2dfe4f39a6 *R/check.derivatives.R
@@ -15,7 +15,7 @@ c6d0abb037c8d3ed43413c4fe7fcb7b9 *R/is.nloptr.R
 7734348be66484e73d96f99cc2498667 *R/mma.R
 4f39342517f60bfa58a1fa60e595a71c *R/nloptions.R
 2ca3fde24d91145116ae904694ca1895 *R/nloptr-package.R
-796bda94a828dd62ad8fc678eb7c3c16 *R/nloptr.R
+6856303c3b111d52b12e332981f58c76 *R/nloptr.R
 87b6db027006b426f4b7151c8856358f *R/nloptr.add.default.options.R
 8ad321c4454af668c8db647a059dc774 *R/nloptr.get.default.options.R
 d45fe0c993e466fc311f0b98e3cf840b *R/nloptr.print.options.R
@@ -25,7 +25,7 @@ add17b063aac9bb9558baf51883d0898 *R/print.nloptr.R
 20d674fd10cc1d4a25d8b7f024d330d0 *R/tnewton.R
 442cdf85bd35202e9a862fbed687a52f *R/varmetric.R
 458de6d2b18b14864567014e08953eea *R/zzz.R
-c7a915167cff15a6750ab6f36842e65d *README.md
+5a110ba363d78e09d2543488bd5cd105 *README.md
 2c0aa98cb95e85ff2f87962a2d0fb93a *build/vignette.rds
 41b24a7410fc707ea978acd5073dc371 *cleanup
 dce8ff9324571fee31b6138a3817067b *configure
@@ -33,7 +33,7 @@ dce8ff9324571fee31b6138a3817067b *configure
 b13c04c6ff93be16915e4d59145683ad *inst/CITATION
 abeb4fc0319880235c2561853c02351c *inst/doc/nloptr.R
 619958a6b7ea49b4bcdf5bf0600d1336 *inst/doc/nloptr.Rmd
-6a5e523b11540ae9ae5777306c425ce3 *inst/doc/nloptr.html
+1c5407649cad9196baf91eec719e6cf8 *inst/doc/nloptr.html
 8ff1729153f0592dcaa284f4471b228d *inst/include/nloptrAPI.h
 5fdee933a7104d867c8e234820049d14 *inst/tinytest/test-Rosenbrock-banana.R
 01cd0194d50eeb83c285b6a42eff484e *inst/tinytest/test-check.derivatives.R
@@ -44,7 +44,7 @@ c444b18a7a246750683d4be611facdf6 *inst/tinytest/test-example.R
 a2ac031fa9eff6ec3f35404f893dd0d5 *inst/tinytest/test-hs071.R
 953d535b34e32314d55fcb5708566aa9 *inst/tinytest/test-is.nloptr.R
 2901a91c515a92eb20dbbee6f7d1f67b *inst/tinytest/test-nloptions.R
-975e3fd20362d59d0f2e6b7905ee4bbe *inst/tinytest/test-nloptr.R
+3b0501eb7d3f2d4536640e6dc842c793 *inst/tinytest/test-nloptr.R
 f3a8bee74228a90418ce9d85ca7df862 *inst/tinytest/test-nloptr.add.default.options.R
 c072a836125402cba5f2a0b7947c13d3 *inst/tinytest/test-nloptr.print.options.R
 0b5679928d00f4e3440b2ec2732070a1 *inst/tinytest/test-options-maxtime.R
@@ -96,11 +96,11 @@ f75535fb06c5fbbe14889c97c779b589 *man/stogo.Rd
 4adef5279df6e6085c67f45c29ed8cb8 *src/Makevars.win
 d41d8cd98f00b204e9800998ecf8427e *src/dummy.cpp
 6de1af1c0cbddd55b644f2d68e24dbee *src/init_nloptr.c
-8fb4dca31069c62bad33d7e0062625a9 *src/nlopt-src.tar.gz
-1fb025dcb103cf4cd09524aa35038a3a *src/nloptr.c
+3ca4da30e723c3b14e9f9e198ce43a02 *src/nlopt-src.tar.gz
+d1b92e284d4266d76dbfc4fa1f6b506d *src/nloptr.c
 ef3a88c4ac5ae104e35a38c79c93a3c4 *src/nloptr.h
 2d545791431e62c06e17ed4130ac0d13 *src/scripts/nlopt_cleanup.sh
-9792b873cb51bce028346abb20bacf89 *src/scripts/nlopt_download.sh
+a48f1201ec1ecbc4dfd8944f3465f37b *src/scripts/nlopt_download.sh
 3fd0eb363669e71650dfe0834fb09258 *src/scripts/r_config.sh
 2edead7f1b9f4909c311e3fc41830c03 *tests/tinytest.R
 e6129759fca814e28e8d52f29a06b62e *tools/cmake_call.sh

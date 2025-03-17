@@ -322,6 +322,10 @@ nloptr <- function(x0,
                    opts = list(),
                    ...) {
 
+  # check x0
+  if (!is.numeric(x0)) stop("x0 must be numeric\n")
+  if (length(x0) == 0) stop("x0 must have length > 0\n")
+
   # internal function to check the arguments of the functions
   .checkfunargs <- function(fun, arglist, funname) {
     if (!is.function(fun)) stop(funname, " must be a function\n")
